@@ -1,0 +1,68 @@
+
+@keyframes cambiarColor {
+    0% {
+        /*ALGO y vas cambiando el porcentaje*/
+        background-color: orangered;
+    }
+
+    50%{
+        background-color: fuchsia;
+    }
+
+    100%{
+        background-color: yellow;
+        width: 400px;
+        height: 300px;
+    }
+    /* from { background-color: orangered;}
+    to { c} */
+}
+
+
+@keyframes cambiarColor2 {
+    0% {
+        /*ALGO y vas cambiando el porcentaje*/
+        background-color: white;
+    }
+
+    50%{
+        background-color: black;
+    }
+
+    100%{
+        background-color: yellow;
+        width: 10px;
+        height: 10px;
+    }
+    /* from { background-color: orangered;}
+    to { c} */
+}
+
+.animacion{
+    background-color: grey;
+    border: solid 1px ;
+    color: white;
+    width: 150px;
+    height: 150px;
+
+    animation: cambiarColor 5s linear infinite alternate;
+    -webkit-animation: cambiarColor 5s linear infinite alternate;
+    -moz-animation: cambiarColor 5s linear infinite alternate;
+    -o-animation: cambiarColor 5s linear infinite alternate;
+}
+
+.animacion2{
+    background-color: grey;
+    border: solid 1px ;
+    color: white;
+    width: 150px;
+    height: 150px;
+
+    animation: cambiarColor2 5s linear infinite alternate;
+    -webkit-animation: cambiarColor2 5s linear infinite alternate;
+    -moz-animation: cambiarColor2 5s linear infinite alternate;
+    -o-animation: cambiarColor2 5s linear infinite alternate;
+}
+
+
+

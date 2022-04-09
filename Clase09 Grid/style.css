@@ -1,0 +1,41 @@
+html{
+    font-size: 62.5%; /*10px se usa para el rem*/
+}
+
+
+body{
+    background: linear-gradient(60deg,blue, white);
+}
+
+
+h1{
+    color:red;
+}
+
+
+.grid-container{
+    display: grid;
+    /* grid-template-columns: 10rem 10rem 10rem; */    
+    grid-template-rows: 10rem 10rem 20rem 30rem ;
+    grid-template-columns: repeat(3,10rem);
+    /*para aplicar una separación*/
+    gap: 0.5rem;
+    /*row-gap: XXrem column-gap: XXrem*/
+}
+
+
+.grid-item{
+    border:solid black 1px;
+    background-color: violet;
+    /*para centrar el texto*/
+    display: flex;
+    justify-content: center; /**/
+    align-items: center;
+
+}
+
+#caja-especial{    
+    grid-column: 2/4; /*ShortCut*/
+    grid-row-start: 2;
+    grid-row-end: 4;
+}

@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "tipografia";
+    src: url('fonts/blackjack.otf');
+}
+
+
+
+/*De esta forma importamos la tipografia
+
+Completa
+
+*{
+    font-family: "tipografia";
+}
+*/
+
+header{
+    background-color: tomato;
+}
+
+section{
+    background-color: green;
+}
+h4 {
+    background-color: blue;
+    text-align: center;
+    font-family: 'Palette Mosaic', cursive;   
+}
+
+h1 {
+    word-spacing: 15px;
+    letter-spacing: 15px;
+    /*
+    text-shadow: -3px -2px orange;
+    text-decoration: line-through white;
+    */
+    font-family: "tipografia";
+}
+
+article span img {
+    width: 250px;
+    height: 300px;
+}
+
+nav{
+    display: inline-block;
+}
+
+li { 
+    display: inline-block; /*de esta manera quedan uno al lado del otro*/
+    height: 30px;
+    width: 100px;
+    background-color: red;
+}
+
+a {
+    color: white;
+}
+
+/*
+font-family: 'Palette Mosaic', cursive;
+*/
+

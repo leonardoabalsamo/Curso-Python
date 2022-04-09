@@ -1,0 +1,29 @@
+body{
+    font-size: 63.5%;
+}
+
+body{
+    background: linear-gradient(60deg, blue, white);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px,1fr));
+    gap: 1rem;
+}
+
+
+.grid-item{
+    background: rgba(0, 0, 0, 0.3);
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+img{
+    border-radius: 1rem;
+    width: 100%;
+}

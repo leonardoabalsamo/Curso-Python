@@ -1,0 +1,185 @@
+
+
+*{
+  font-family: 'PT Sans', sans-serif;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding:0px;
+}
+
+
+img{
+    height: 100px;
+    border-radius: 20px;
+}
+
+.separador{
+  height: 50px;
+}
+
+#objetivo {
+    
+    background-color: white;
+    background-image: url("https://blog.openclassrooms.com/es/wp-content/uploads/sites/5/2017/09/AdobeStock_126016889apaisado.jpg");
+    background-size: 100rem;
+    opacity:1;
+    
+  }
+
+  #objetivo h2 {
+    padding-top: 2%;
+    text-align: center;
+    color: rgb(123, 112, 163);
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  }
+
+  .flexobj{
+      margin-left: 1%;
+      margin-right: 50%;
+      margin-top: 15px;
+      padding-bottom: 25px;
+      height: 200;
+      width: 100;
+  }
+
+  .flexobj p{
+    background: -webkit-linear-gradient(left, rgb(8, 1, 39), white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: x-large;
+}
+
+
+#estudio {
+    
+    background-color: white;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-big-data-blue-e-commerce-taobao-banner-background-image_188262.jpg");
+    background-size: 100rem;
+    opacity:1;
+    
+  }
+
+  #estudio h2 {
+    padding-top: 2%;
+    text-align: center;
+    color: rgb(123, 112, 163);
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  }
+
+.flexestudio{
+    margin-right: 25px;
+    margin-left: 50%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    height: 200;
+    width: 100;
+    text-align: justify;
+    align-items: center;
+  }
+
+  .flexestudio p{
+    background: -webkit-linear-gradient(right, rgb(90, 88, 100), white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: x-large;
+}
+
+
+#experiencia {
+    
+    background-color: white;
+    background-image: url("https://img.freepik.com/vector-gratis/vector-ilustracion-fondo-azul-conexion-todo-mundo_53876-80910.jpg?size=626&ext=jpg&ga=GA1.2.1519780373.1638748800");
+    background-size: 100rem;
+    opacity:1;
+    width: 100%;
+    
+  }
+
+  #experiencia h2 {
+    padding-top: 2%;
+    text-align: center;
+    color: rgb(123, 112, 163);
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  }
+
+.flexexperiencia{
+      margin:0%;
+      padding: 2%;
+      height: 220px;
+      width: 98%;
+      text-align: justify;
+      display: inline-block;
+  }
+
+  .flexexperiencia img{
+    margin-left: 15px;
+    margin-top: 20px;
+    width: 200px;
+    height: 80px;
+    border-radius: 30;
+}
+
+  .flexexperiencia p{
+    background: -webkit-linear-gradient(right, rgb(90, 88, 100), white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: x-large;
+}
+
+
+#contacto {
+  width: 100%;
+  height: 770px;
+  display: block;
+  background-color: red;
+  display: flex;
+}
+
+
+label, legend {
+  color: rgb(227, 240, 241);
+}
+
+.flexcontacto{    
+      background-image: url('https://www.bartolomeconsultores.com/wp-content/uploads/2015/10/fondo-formulario.jpg');
+      width: 30%;
+      display: inline-block;
+      padding: 1%;
+      height: 100%;
+  }
+
+.fleximg{    
+  background-image: url('https://picsum.photos/1200/900?random=1');
+  width: 30%;
+  height: 100%;
+}
+
+.fleximg2{    
+  background-image: url('https://picsum.photos/1200/900?random=3');
+  width: 40%;
+  height: 100%;
+}
+
+footer{
+  height: 70px;
+  background-color: rgb(187, 184, 184);
+  padding: 1%;
+}
+
+.titulos {
+  text-align: center;
+  text-shadow: indigo;
+  word-spacing: 15px;
+  letter-spacing: 5px;
+}
+

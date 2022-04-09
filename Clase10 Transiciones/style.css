@@ -1,0 +1,94 @@
+/* *{
+    background: linear-gradient(#e66465, #9198e5);
+} */
+
+a{
+    background-color: grey;
+    color: white;
+    padding: 2px;
+    border: solid 1px black;
+
+    transition-property: all; /*Propiedades que afecta la transición*/
+    transition-duration: 0.7s; /*duración de la transición*/
+    transition-timing-function: ease-in; 
+    transition-delay: 0.3s; /*Tiempo para comenzar la transición*/
+}
+
+a:visited{
+    color: turquoise;
+    background-color: blue;
+    /* visited refiere a cuando fue apretado el link */
+}
+
+a::before{
+    content: "<<";
+    /* sirve para modificar el html desde el css */
+}
+
+a::after{
+    content: ">>";
+}
+
+
+a:hover{
+    background-color: red;
+    padding: 8px;
+    border: yellow solid 3px;
+
+    transition-property: all; /*Propiedades que afecta la transición*/
+    transition-duration: 0.7s; /*duración de la transición*/
+    transition-timing-function: ease-in; 
+    transition-delay: 0.3s; /*Tiempo para comenzar la transición*/
+}
+
+a:active{
+    color: chocolate;
+    background-color: white;
+    /* contenido cuando haces click y queda apretado */
+}
+
+
+.parrafo{
+    /* transform: translateY(200px); */
+    /* transform: translate3d(200px); */
+    transform: skew(3deg,7deg);
+}
+
+p::first-letter{
+    color: tomato;
+    font-size: medium;
+    font-family: cursive;
+}
+p::first-line{
+    color: violet;
+}
+
+@media screen and (max-width:640px){
+    p{
+        color: yellow;
+    }
+    h1{
+        color: green;
+        font-size: 3rem;
+    }
+    
+}
+
+@media screen and (max-width:1024px) and (min-width:640px) {
+    p{
+        color: grey;
+    }
+
+    h1{
+        font-size: xx-large;
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+    p{
+        color: khaki;
+    }
+}
+
+

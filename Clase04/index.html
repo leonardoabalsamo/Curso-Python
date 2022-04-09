@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href=""> <!--Para Agregar un icono en la pestaña-->
+</head>
+<body>
+
+    <h1>Formularios</h1>
+    <form action="https://formspree.io/f/mzbovgdy" method="POST">
+        <label>Nombre:
+            <input type="text" name="nombre" id="">
+        </label>
+        <label >Apellido:
+            <input type="text" name="apellido">
+        </label>
+        <label>Seleccionar Curso:
+            <select name="curso" >
+                <option value="Python">Python</option>
+                <option value="Python">Java</option>
+                <option value="Python">Node</option>
+            </select>
+        </label>
+        <label>
+            Comentarios:
+            <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+        </label>
+
+        <fieldset>
+            <legend>Datos Personales Maraton</legend>
+            <label>Bicicleta:
+                <input type="text" name="bicicleta" >
+            </label>
+            <input type="color" name="" id="">
+            <input type="date" name="" id="">
+        </fieldset>
+
+        <p> 
+            <input type="reset" value="Reset">
+        </p>
+        <input type="submit" value="Enviar">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+span {
+    background-color: red;
+    border: 2px solid green;
+    /* display: block; */  /* sin esto no toma el ancho y alto*/ 
+    display: inline-block; /* para que quede al lado */ 
+    width: 200px;
+    height: 200px;
+}
+
+div {
+    background-color: blue;
+    border-color: red;
+    border-width: 2px;
+    border-style: solid;
+    width: 200px;
+    height: 200px;
+}
+
+#invisible {
+    visibility: hidden; /*queda pero no se ve*/
+    display: none; /*no se dibuja directamente*/
+}

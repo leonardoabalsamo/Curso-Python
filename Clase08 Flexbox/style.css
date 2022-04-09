@@ -1,0 +1,47 @@
+h1 { 
+    color: rgb(133, 36, 36), green, blue;
+}
+
+.flex-container{
+    background-color: royalblue;
+    height: 50vh;
+    width: 50vw;
+    display: flex; 
+    /*Si el padre es FLEX los hijos directos tambien!!*/
+    /* Display inline block es solo para el padre */
+    /* flex-direction: row; es lo que viene por defecto 
+    flex-direction: row-reverse; te lo lleva hacia la derecha*/
+    /*flex-direction: column; /* Eje principal columna*/
+
+    /*Eje Principal*/
+    flex-direction: row; /*depende si es column o row*/
+    justify-content: space-around;
+
+    /*Eje Secundario*/
+    align-items: center;
+
+
+    /*desborde*/
+    flex-wrap: wrap;
+}
+
+.flex-item{
+    background-color: #2e8b57;
+    /*
+    height: 15%;
+    width: 15%;
+    */
+    /*para el desborde tienen que tener tamaño fijo*/
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.flex-item2{
+    background-color: #8b3c2e;
+    height: 15%;
+    width: 15%;
+    border: 1px solid black;
+    align-self: flex-end; /*para manejar uno solo*/
+    /*flex-grow: 2; /*doble que las dejas cajitas*/
+}

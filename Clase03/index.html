@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table, td, th {
+            border:solid red;
+        }
+        
+    </style>
+    <title>Tabla y Listas - Clase 2</title>
+</head>
+<body>
+    <!-- Cascade Style Sheet CSS -->
+
+    <!-- Pagina one page (Maquetación) -->
+
+
+    <header>
+        <nav>
+            <a href="#listas">Listas </a>
+            <a href="#tablas">Tablas </a>
+            <a href="#coldspan">Colspan </a>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="top"></section>
+
+
+        <section id="listas">
+            <h2>Lista Ordenada</h2>
+
+            <ol type="I" reversed> <!-- order List -->
+                <li>Opción 1</li>
+                <li>Opción 2</li>
+                <li>Opción 3</li>
+                <li>Opción 4</li>
+                <li>Opción 5</li>
+                <li>Opción 6</li>
+            </ol>
+       
+            <hr>
+                 
+           <h2>Lista sin Ordenar</h2>
+       
+           <ul> <!-- Unorder List -->
+               <li>Opción 1</li>
+               <li>Opción 2</li>
+               <li>Opción 3</li>    
+           </ul>
+       
+           <hr>
+       
+           <table>
+               <tr>
+                   <th>Titulo columna 1</th>
+                   <th>Titulo columna 2</th>
+                   <th>Titulo columna 3</th>
+               </tr>
+               <tr>
+                   <td>Celda </tdtd>
+                   <td>Celda </td>
+                   <td>Celda </td>
+               </tr>
+               <tr>
+                   <td>Celda </td>
+                   <td>Celda </td>
+                   <td>Celda </td>
+               </tr>
+           </table>
+       
+           <hr>
+       
+        </section>
+
+        <section id="tablas">
+            <table>
+                <title>Titulo de la Tabla</title>
+                <tr>
+                    <th>Columna 1 </th>
+                    <th>Columna 2 </th>
+                </tr>
+                <tr>
+                    <td>Celda 1</td>
+                    <td>Celda 2</td>
+                </tr>
+            </table>
+        
+            <hr>
+        
+            <table>
+                <tr>
+                    <th>Curso</th>
+                    <th>Comisión</th>
+                </tr>
+                <tr>
+                    <td>Full Stack</td>
+                    <td>2123</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>2598</td>
+                </tr>
+                <tr>
+                    <td>Web</td>
+                    <td>2254</td>
+                </tr>
+            </table>
+        
+        </section>
+
+        <section id="coldspan">
+            <table>
+                <tr>
+                    <th>Curso</th>
+                    <th>Comisión</th>
+                </tr>
+                <tr>
+                    <td colspan="2">Full Stack</td>
+                    <!-- Expansion de Columna -  Extension en Columna-->
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>2598</td>
+                </tr>
+                <tr>
+                    <td>Web</td>
+                    <td>2254</td>
+                </tr>
+            </table>
+        
+            <hr>
+        
+            <table>
+                <tr>
+                    <th>Curso</th>
+                    <th>Comisión</th>
+                </tr>
+                <tr>
+                    <td colspan="2">Full Stack</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Java</td>
+                    <!-- Expansion de Fila -  Extension en Fila-->
+        
+                    <td>2598</td>
+                </tr>
+                <tr>
+                    <td>2254</td>
+                </tr>
+            </table>
+        </section>
+
+    </main> 
+    <a href="#top">Arriba</a>
+    
+    
+
+</body>
+</html>
