@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>TItulo</h1>
+
+    <p id= "parrafo1">njasjknaslfas </p>
+    <p id= "parrafo2">njasjknaslfas </p>
+    <p id= "parrafo3">njasjknaslfas </p>
+
+
+    <h2>primer query selector</h2>
+    <h2 id="title">segundo query selector</h2>
+
+
+    <div id="container1">
+        <div class="caja">caja1</div>
+    </div>
+
+    <div id="container2">
+        <div class="caja">caja2</div>
+    </div>
+
+    <div class="caja">caja 1</div>
+    <div class="caja">caja 2</div>
+    <div class="caja">caja 3</div>
+
+
+    <ul id="lista1">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <ul id="lista2">
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+    </ul>
+
+
+    <div id="cajaParaSubtitulo"></div>
+
+    <script>
+        // getElementsByTagName
+        let parrafos = document.getElementsByTagName("p")
+        parrafos[1].innerHTML = "contenido nuevo"
+        console.log(parrafos)
+
+        // getElementById
+        let parrafoNuevo = document.getElementById("parrafo3")
+        parrafoNuevo.innerHTML = "parrafo tres"
+        
+
+        // Query selector
+        let tituloPagina = document.querySelector("h2") // #title o .title tambien
+        console.log(tituloPagina)
+
+        let tituloSecundario = document.querySelector("#title")
+        console.log(tituloSecundario)
+
+        //Accesos adentro de varios elementos
+
+        let primeraCaja = document.querySelector(".caja")
+        console.log(primeraCaja)
+
+        let aux = document.getElementById("container2")
+        let segundaCaja = aux.querySelector(".caja")
+        console.log(segundaCaja)
+
+        // Query selector para todas las cajas
+
+        let cajas = document.querySelectorAll(".caja")
+        cajas[0].style.color="red"
+        console.log(cajas)
+
+        for (let i =0 ; i<cajas.length ; i++){
+            cajas[i].style.color = "green"
+        }
+
+        cajas.forEach(element => element.style.color = "red") // con un foreach mas rapido
+
+        let listaDos = document.querySelector("#lista2")
+        let itemsListaDos = listaDos.querySelectorAll("li")
+
+        itemsListaDos[2].style.color="yellow"
+
+
+        // CREAR UN ELEMENTO DESDE JAVASCRIPT Y MANDARLO AL HTML
+
+        //1er paso crear la etiqueta
+        let nuevoElemento = document.createElement("h3")
+        
+        //2do paso crear contenido
+        let contenido = document.createTextNode("Subtitulo")
+
+        //3er paso matchear
+        nuevoElemento.appendChild(contenido)
+
+        //4to paso estilos
+        nuevoElemento.setAttribute("style", "color:red")
+        //nuevoElemento.setAttribute("fontSize" , "40px")
+
+        //5to paso insertar en el html
+        //document.getElementById("cajaParaSubtitulo").appendChild(nuevoElemento)
+
+        let parrafo = document.getElementsByTagName("p")
+        parrafo[1].appendChild(nuevoElemento)
+        ////////////////////////////////////////////////////////////////
+
+        parrafo.removeChild(nuevoElemento)
+
+
+    </script>
+</body>
+</html>

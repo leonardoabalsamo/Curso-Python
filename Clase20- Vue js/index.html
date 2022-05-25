@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+<!--
+    <div id="app"> 
+        <span v-if="seen">Valor True</span>
+    </div>
+-->
+<div id="app"> 
+        <p>{{ message }}</p>
+
+        <button v-on:click="mensajeReverse"> {{ literal }}</button>
+</div>
+
+</body>
+
+<script>
+/*
+    let app = new Vue({
+        el: "#app",
+        data: {
+            seen: true,
+        },
+
+    });
+*/
+
+var app = new Vue({
+    el: "#app",
+    data: {
+        message: "utilizando vue js..",
+        literal: "Reverse Mensaje"
+    },
+    methods: {
+
+        mensajeReverse: function(){
+            this.message = this.message.split("").reverse().join("");
+        },
+    },
+});
+</script>
+</html>

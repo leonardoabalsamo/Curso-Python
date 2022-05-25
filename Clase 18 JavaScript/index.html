@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Estacion Espacial</h1>
+
+
+<h3>
+    Latitud: <span id="lat"></span><br/>
+    Longitud:<span id="lon"></span><br/>
+    Velocidad:<span id="vel"></span>/Hora<br/>
+</h3>
+
+<script>
+    const url_api = "https://api.wheretheiss.at/v1/satellites/25544"
+    // se llama endpoint
+
+    // Creamos una función asincrónica
+
+    async function obtenerPosicion(){
+        //libreria fetch -> Devuelve una promesa pegandole al endpoint
+        const response = await fetch(url_api);
+        //console.log(response)
+        // hay que transformarlo en un objeto Json
+        const data = await response.json();
+        console.log(data);
+
+        //const latitude = data.latitude
+
+        const { latitude , longitude , velocity , units } =data;
+
+        //Los agrego al html
+
+        document.getElementById('lat').textContent=latitude;
+        document.getElementById('lon').textContent=longitude;
+        document.getElementById('vel').textContent=velocity;        
+    }
+
+</script>
+
+</body>
+</html>

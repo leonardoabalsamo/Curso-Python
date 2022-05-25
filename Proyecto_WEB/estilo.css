@@ -1,0 +1,514 @@
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-size: 15px;
+}
+
+
+body{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+main{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: auto;
+}
+
+
+
+/*Formulario*/
+@media screen and (min-width: 961px) and (max-width:1240px){ 
+	.formflex{			
+		max-width: 100em;
+	}
+
+    .divform{
+        max-width: 50em;
+    }
+
+    footer h3{
+        font-size: 0.5em;
+    }
+}
+
+
+@media screen and (min-width: 641px) and (max-width:960px){ 
+	.formflex{			
+		max-width: 50em;
+	}
+
+    .divform{
+        max-width: 25em;
+    }
+
+    footer h3{
+        font-size: 0.3em;
+    }
+}
+
+
+@media screen and (min-width: 240px) and (max-width:640px){ 
+	.formflex{			
+		max-width: 25em;
+	}
+
+    .divform{
+        max-width: 12em;
+    }
+
+    footer h3{
+        font-size: 0.1em;
+    }
+}
+
+p{
+    font-size: 1.0vw;
+
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+
+.text{
+    margin: 0%;
+    padding: 0%;
+    background-color: transparent;
+    height:6vh;
+}
+.text p {
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    margin: 0px;
+    padding:0%;
+    animation: cambiarColor 3s infinite alternate;
+    -webkit-animation: cambiarColor 3s linear infinite alternate;
+    -moz-animation: cambiarColor 3s linear infinite alternate;
+    -o-animation: cambiarColor 3s linear infinite alternate;
+}
+
+/* Pagina Principal */
+
+.divGrid{
+    width: 100vw;
+    height:76.95vh;
+    background-color: transparent;
+    display: grid;
+    grid-template-areas: "uno uno uno" 
+                         "uno uno uno" 
+                         "uno uno uno" 
+                         "uno uno uno";
+    align-items: center;
+    padding-left: 5%;
+
+}
+
+.divGridPrincipal{
+    
+    width: 90vw;
+    height:77vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: auto;
+}
+
+.divGridAnimacion{
+    width: 100vw;
+    height:76.95vh;
+    background-color: transparent;
+    display: grid;
+    grid-template-areas:    "uno uno uno uno uno" 
+                            "uno uno uno uno uno"  
+                            "uno uno uno uno uno" 
+                            "uno uno uno uno uno"  
+                            "uno uno uno uno uno"  
+                            "uno uno uno uno uno"  
+                         ;
+    align-items: center;
+    padding-left: 5%;
+
+}
+.divIntGrid{
+    width: 30vw;
+    height:20vh;
+    background-color: transparent;
+    align-content: center;
+    padding: 1%;
+    opacity: 0.3;
+    border-radius: 5%;
+}
+.divIntGrid:hover{    
+    opacity: 0.8;
+}
+
+.divIntGrid a img{
+    width: 15vw;
+    height:15vh;
+    border-radius: 50%; 
+    border: solid black 1px; 
+}
+
+.divIntGrids{
+    width: 25vw;
+    height:25vh;
+    background-color: #e6eeee;
+    text-align: center;
+    padding: 1%;
+    opacity: 0.2;
+    cursor: pointer;
+    align-self: start;
+    margin-left: 18vh;
+}
+
+.difIntGrids{
+    width: 25vw;
+    height:25vh;
+    background-color: #e6eeee;
+    text-align: center;
+    padding: 1%;
+    opacity: 0.2;
+    cursor: pointer;
+    align-self: start;
+    margin-left: 18vh;
+}
+
+.difIntGrids:hover{   
+    opacity: 1;
+    color:black;
+}
+
+.divIntGrids img {
+    width: 24vw;
+    height: 24vh;
+
+}
+
+.difIntGrids a{
+    text-decoration: none;
+    color: black;
+}
+
+.divIntGrids img:hover {
+    width: 24vw;
+    height: 38vh;
+
+}
+
+.divIntGrids:hover{  
+    border: solid 1px;
+    width: 25vw;
+    height: 40vh;
+    opacity: 1;
+    background-color: rgb(187, 183, 183);
+    color: black;
+}
+
+
+#video {
+    position: absolute;
+    margin-top: 12.5vh;
+    margin-bottom: 14vh;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 77vh;
+    z-index: -10;
+    visibility: visible;
+    opacity: 1;
+    }
+
+.divIntGrid a img:hover{
+    width: 25vw;
+    height:25vh;
+    border-radius: 50%; 
+    border:solid 4px black; 
+    opacity: 1;
+     
+}
+
+
+/*Formulario*/
+
+.formflex{
+    width: 100vw;
+    height: 77vh;
+    background-color: transparent;
+    display: grid;
+    grid-template-areas: "uno uno uno" 
+                         "uno uno uno" 
+                         "uno uno uno";
+    align-items: center;
+    position: absolute;
+    top: 10;
+    left: 0;
+}
+
+.divform{
+    background-color: #b5b5b5;    
+    border: solid 3px #b5b5b5;    ;
+    width: 30vw;
+    height:20vh;
+    background-color: #d5d8d8;
+    text-align: center;
+    padding-top: 1%;
+    margin-left: 1vw;
+    border-radius: 2vw;
+
+}
+
+.divform:hover{  
+    
+    width: 35vw;
+    height: 24vh;
+    opacity: 1;
+    animation: cambiarColorForm infinite;
+    animation-duration: 5s ;
+}
+
+.divform input{
+    border-radius: 5px;
+    border-color: rgb(0, 139, 109);
+    width: 20vw;
+}
+
+.divform label{
+    font-family: 'Macondo'; 
+    font-size: 3vh;
+}
+
+.divform .btn{
+    background-color: white;
+    font-family: 'Macondo'; 
+    font-size: 2vh;
+    border: solid 2px black;
+}
+
+/* Funcion cambiar de color */
+
+@keyframes cambiarColorForm {
+    
+    from{
+        /*ALGO y vas cambiando el porcentaje*/
+        background-color: #070707;
+        color: white;
+    }  
+
+   to {
+        background-color: #f8f8f8; 
+        color: black;  
+    }
+  }
+
+@keyframes cambiarColor {
+    20% {
+        /*ALGO y vas cambiando el porcentaje*/
+        background-color: #fdfdfd;
+        color: black;
+    }  
+    55%{
+        background-color: #496f72;
+    }
+  
+    90%{
+        background-color: #161616;
+        color:white   
+    }
+  }
+
+
+  
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  @keyframes Giro {
+    from {
+      margin-left: 50%;
+      width: 10%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 50%;
+    }
+  }
+
+
+/* Eventos */
+
+.btn:hover{
+    border-radius: 5px;
+    background-color: turquoise;
+    color: white;
+    font-weight:bolder;
+    border:solid 2px black;
+    height: 6vh;
+    width: 25vw;
+    font-size: 1.5rem;
+}
+  
+#anim1 {   
+    background: rgb(227, 243, 4);   
+    width: 10vw;
+    height:20vh;   
+    border-radius: 50%; 
+    border: solid 2px black; 
+} 
+
+#anim2 {   
+    background: rgb(245, 245, 245);   
+    width: 10vw;
+    height:20vh;    
+    border-radius: 50%;  
+    border: solid 2px black; 
+
+} 
+
+#anim3 {   
+    background: rgb(255, 2, 2);   
+    width: 10vw;
+    height:20vh;    
+    border-radius: 50%;      
+    border: solid 2px black; 
+
+} 
+
+#anim4 {   
+    background: rgb(18, 156, 103);   
+    width: 12vw;
+    height:10vh;   
+    border-radius: 50%;  
+    border: solid 2px black; 
+ 
+} 
+
+#anim5 {   
+    background: rgb(30, 7, 236);   
+    width: 12vw;
+    height:20vh;   
+    border-radius: 50%;  
+    border: solid 2px black; 
+
+} 
+
+#anim6 {   
+    background: rgb(223, 20, 223);   
+    width: 10vw;
+    height:20vh;  
+    border-radius: 50%; 
+    border: solid 2px black; 
+ 
+} 
+
+#anim7 {   
+    background: rgb(12, 11, 12);   
+    width: 10vw;
+    height:20vh; 
+    border: solid 2px black; 
+ 
+} 
+
+
+/*Eventos*/
+
+#anim1:hover {   
+    background: rgb(234, 238, 181);   
+    width: 10vw;
+    height:20vh;   
+    border-radius: 5%;  
+    animation: rollOut  infinite alternate;
+    animation-duration: 1.5s;
+    cursor: pointer; 
+} 
+
+#anim2:hover {   
+    background: rgb(78, 78, 78);   
+    width: 10vw;
+    height:20vh;    
+    border-radius: 35%;  
+    animation: bounce  infinite alternate;
+    animation-duration: 1.5s; 
+    cursor: pointer;
+} 
+
+#anim3:hover {   
+    background: rgb(236, 143, 143);   
+    width: 10vw;
+    height:20vh;    
+    border-radius: 50%;  
+    animation: zoomInLeft  infinite alternate;
+    animation-duration: 1.5s; 
+    cursor: pointer;
+} 
+
+#anim4:hover {   
+    background: rgb(153, 238, 206);   
+    width: 12vw;
+    height:10vh;   
+    border-radius: 60%;  
+    animation: slideOutDown  infinite alternate;
+    animation-duration: 1.5s; 
+    cursor: pointer;
+} 
+
+#anim5:hover {   
+    background: rgb(161, 154, 224);   
+    width: 12vw;
+    height:20vh;   
+    border-radius: 10%;  
+    animation: flipInX  infinite alternate;
+    animation-duration: 2s; 
+    cursor: pointer;
+} 
+
+#anim6:hover {   
+    background: rgb(119, 95, 119);   
+    width: 10vw;
+    height:20vh;  
+    border-radius: 20%;  
+    animation: flip  infinite alternate;
+    animation-duration: 1.5s; 
+    cursor: pointer;
+} 
+
+
+
+
+/* Cambiar color de firma */
+
+footer{
+    background-color: rgb(201, 212, 212);
+    animation: cambiarColor 15s infinite alternate;
+    -webkit-animation: cambiarColor 15s linear infinite alternate;
+    -moz-animation: cambiarColor 15s linear infinite alternate;
+    -o-animation: cambiarColor 15s linear infinite alternate;
+    height:10vh;   
+    text-align: center;
+}
+
+footer h3{
+    font-size: 1.8vw;
+}
+
+
+
+
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pokemon</h1>
+
+    <div id="primero"></div>
+
+<script>
+    const url_api = "https://pokeapi.co/api/v2/pokemon/ditto"
+   
+
+    async function obtenerDatos()
+    {
+        const response = await fetch(url_api);
+
+        data = await response.json()
+
+        console.log(data)
+        
+        let divisor = document.getElementById("primero")
+        let imagen = document.createElement('img') // creo etiqueta
+        let contenido = data.sprites.front_default // creo contenido
+        imagen.setAttribute('src',contenido) // match 
+        divisor.appendChild(imagen)
+
+
+
+    }
+
+
+    obtenerDatos()
+</script>
+
+</body>
+</html>
